@@ -1,5 +1,5 @@
 site_name: rafidoth 
-site_url: https://mydomain.org/rafidoth
+site_url: https://rafidoth.github.io/personal-doc-mkdocs/ 
 theme: 
   name: material
   palette: 
@@ -15,7 +15,7 @@ theme:
         icon: material/brightness-7 
         name: Switch to dark mode
   font:
-    text: Ubuntu Mono
+    text: Roboto Mono 
   icon:
     logo: simple/codeigniter
   features:
