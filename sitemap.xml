@@ -6,6 +6,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rafidoth.github.io/personal-doc-mkdocs/leetcode/leetcode349/</loc>
+         <lastmod>2024-06-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rafidoth.github.io/personal-doc-mkdocs/leetcode/leetcode410/</loc>
+         <lastmod>2024-06-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rafidoth.github.io/personal-doc-mkdocs/leetcode/leetcode888/</loc>
          <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
