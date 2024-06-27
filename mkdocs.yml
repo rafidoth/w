@@ -24,3 +24,9 @@ theme:
     - navigation.instant.progress
 extra:
     generator: false
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      line_spans: __span
+  - pymdownx.superfences
