@@ -30,3 +30,5 @@ markdown_extensions:
       use_pygments: true
       line_spans: __span
   - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css
