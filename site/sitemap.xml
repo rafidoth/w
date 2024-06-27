@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://mydomain.org/rafidoth/</loc>
-         <lastmod>2024-06-21</lastmod>
+         <loc>https://rafidoth.github.io/personal-doc-mkdocs/</loc>
+         <lastmod>2024-06-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rafidoth.github.io/personal-doc-mkdocs/leetcode/leetcode888/</loc>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
