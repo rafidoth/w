@@ -36,42 +36,51 @@ int main(){
       freopen("input.txt", "r", stdin);
       freopen("output.txt", "w", stdout);
     #endif
-    clock_t z = clock();
+    // clock_t z = clock();
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     func();
+    int t = 0;
+
     while(cin >> N){
         if(N==0) break;
-
+        t++;    
+        if(t!=1) cout << endl;
+        bool q = false;
         for(string x : pre){
             string num2  = x; 
             long long int b = 0;
-            bool check[10];
+            set<char> chk;
             for(char y : num2){
                b*=10; 
                int m = (int(y)-48);
                b+= m;
-               check[m] = true;
+               chk.insert(y);
             }
             long long int a = N*b;
             long long int cp = a;
+            int u = 0;
             while(cp!=0){
+                u++;
+                if(u>5) break;
                 int l = cp %10;
                 cp/=10;
-                if(check[l] == true){
-                    break;
-                }else{
-                    check[l] = true;
-                }
+                chk.insert(char(l+48));
             }
-            int cnt =0;
-            for(bool z : check) if(z) cnt++;
-            if(cnt==10) cout << b << "/ "<< a<<endl;
+            if(u>5) continue;
+            int cnt = chk.size();
+            if(cnt==10){
+                 q = true;
+                 if(x[0]=='0') cout << a <<" / 0"<<b <<" = "<< N<<endl;
+                 else cout << a << " / "<< b<< " = " << N<<endl;
+            }
             
         }
+        if(!q) cout << "There are no solutions for " << N << "." << endl;
     }
-    debug("Total Time: %.3f\n", (double)(clock() - z) / CLOCKS_PER_SEC);
+    //debug("Total Time: %.3f\n", (double)(clock() - z) / CLOCKS_PER_SEC);
 }
+
 
 
 
